@@ -1,0 +1,211 @@
+{
+  "updated": "2026-10-07",
+  "week": {
+    "monday": [
+      {
+        "start": "06:00",
+        "end": "07:15",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "07:30",
+        "end": "08:15",
+        "classSlug": "engine",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "12:15",
+        "end": "13:00",
+        "classSlug": "kettlebell-conditioning",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "classSlug": "strength-foundations",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "18:30",
+        "end": "19:45",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "19:45",
+        "end": "20:30",
+        "classSlug": "mobility-and-recovery",
+        "trainerSlug": "tom-becker"
+      }
+    ],
+    "tuesday": [
+      {
+        "start": "06:00",
+        "end": "07:15",
+        "classSlug": "olympic-lifting",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "12:15",
+        "end": "13:15",
+        "classSlug": "build",
+        "trainerSlug": "tom-becker"
+      },
+      {
+        "start": "17:30",
+        "end": "18:15",
+        "classSlug": "engine",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "18:30",
+        "end": "19:45",
+        "classSlug": "olympic-lifting",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "19:00",
+        "end": "20:30",
+        "classSlug": "powerlifting-club",
+        "trainerSlug": "maya-okafor"
+      }
+    ],
+    "wednesday": [
+      {
+        "start": "06:00",
+        "end": "07:15",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "07:30",
+        "end": "08:15",
+        "classSlug": "engine",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "12:15",
+        "end": "13:00",
+        "classSlug": "mobility-and-recovery",
+        "trainerSlug": "tom-becker"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "classSlug": "strength-foundations",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "18:30",
+        "end": "19:45",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "18:45",
+        "end": "19:30",
+        "classSlug": "kettlebell-conditioning",
+        "trainerSlug": "priya-nair"
+      }
+    ],
+    "thursday": [
+      {
+        "start": "06:00",
+        "end": "07:15",
+        "classSlug": "olympic-lifting",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "12:15",
+        "end": "13:00",
+        "classSlug": "engine",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "classSlug": "build",
+        "trainerSlug": "tom-becker"
+      },
+      {
+        "start": "18:30",
+        "end": "19:45",
+        "classSlug": "olympic-lifting",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "19:00",
+        "end": "20:30",
+        "classSlug": "powerlifting-club",
+        "trainerSlug": "maya-okafor"
+      }
+    ],
+    "friday": [
+      {
+        "start": "06:00",
+        "end": "07:15",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "12:15",
+        "end": "13:00",
+        "classSlug": "kettlebell-conditioning",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "classSlug": "build",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "18:30",
+        "end": "19:15",
+        "classSlug": "mobility-and-recovery",
+        "trainerSlug": "tom-becker"
+      }
+    ],
+    "saturday": [
+      {
+        "start": "08:00",
+        "end": "09:15",
+        "classSlug": "barbell-strength",
+        "trainerSlug": "maya-okafor"
+      },
+      {
+        "start": "09:00",
+        "end": "10:00",
+        "classSlug": "strength-foundations",
+        "trainerSlug": "priya-nair"
+      },
+      {
+        "start": "09:30",
+        "end": "10:45",
+        "classSlug": "olympic-lifting",
+        "trainerSlug": "daniel-reyes"
+      },
+      {
+        "start": "11:00",
+        "end": "12:30",
+        "classSlug": "powerlifting-club",
+        "trainerSlug": "maya-okafor"
+      }
+    ],
+    "sunday": [
+      {
+        "start": "09:00",
+        "end": "09:45",
+        "classSlug": "mobility-and-recovery",
+        "trainerSlug": "tom-becker"
+      },
+      {
+        "start": "10:00",
+        "end": "10:45",
+        "classSlug": "kettlebell-conditioning",
+        "trainerSlug": "priya-nair"
+      }
+    ]
+  }
+}

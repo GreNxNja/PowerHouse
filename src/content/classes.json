@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "strength-foundations",
+    "name": "Strength foundations",
+    "category": "technique",
+    "level": "beginner",
+    "durationMinutes": 60,
+    "featured": true,
+    "summary": "Learn the squat, hinge, press and pull in small groups, with a coach on every rep.",
+    "description": [
+      "A four-week block that teaches the main barbell lifts from scratch. Groups are capped at six, so the coach can watch every set.",
+      "You finish knowing how to set up, brace and move each lift safely, with starting weights you can build on in any other class."
+    ],
+    "whoItsFor": "New lifters, and anyone coming back after a long break.",
+    "whatToExpect": [
+      "A short warm-up you can reuse on your own days",
+      "One main lift per session, taught in stages",
+      "Two accessory movements to build the positions",
+      "Notes on your starting weights to take away"
+    ],
+    "image": "classes/strength-foundations",
+    "imageAlt": "A coach adjusting a member’s grip on an empty barbell at the squat stands while two others watch",
+    "coaches": ["priya-nair"]
+  },
+  {
+    "slug": "barbell-strength",
+    "name": "Barbell strength",
+    "category": "strength",
+    "level": "intermediate",
+    "durationMinutes": 75,
+    "featured": true,
+    "summary": "Squat, bench and deadlift on a progressive twelve-week cycle. The core of the timetable.",
+    "description": [
+      "Each session builds around one of the three main lifts, with the weight on the bar planned week to week. You log every set, and your coach adjusts the plan when life gets in the way.",
+      "Racks are shared in pairs, so you always have a spotter and someone to talk to between sets."
+    ],
+    "whoItsFor": "Anyone who has finished Strength foundations, or already lifts regularly with good form.",
+    "whatToExpect": [
+      "Ramp-up sets to a planned top set",
+      "Back-off volume at a fixed percentage",
+      "Accessory supersets for weak points",
+      "Ten minutes of conditioning to finish"
+    ],
+    "image": "classes/barbell-strength",
+    "imageAlt": "A member with chalked hands setting up a deadlift on a loaded barbell",
+    "coaches": ["maya-okafor", "priya-nair"]
+  },
+  {
+    "slug": "powerlifting-club",
+    "name": "Powerlifting club",
+    "category": "strength",
+    "level": "advanced",
+    "durationMinutes": 90,
+    "featured": false,
+    "summary": "Heavy singles, competition commands and meet preparation for lifters who want to compete.",
+    "description": [
+      "A longer session for lifters with a meet on the calendar, or who want to train like it. Programming is individual and runs on the same blocks Maya uses for competition lifters.",
+      "Commands are called on heavy sets, and the last session before a meet is a full mock day."
+    ],
+    "whoItsFor": "Experienced lifters. Ask a coach before your first session.",
+    "whatToExpect": [
+      "Individual programs reviewed every four weeks",
+      "Competition-standard commands and judging",
+      "Video review of top sets",
+      "Meet-day planning and attempt selection"
+    ],
+    "image": "classes/powerlifting-club",
+    "imageAlt": "A lifter in a belt at the bottom of a heavy back squat, with a spotter on each side",
+    "coaches": ["maya-okafor"]
+  },
+  {
+    "slug": "olympic-lifting",
+    "name": "Olympic lifting",
+    "category": "technique",
+    "level": "intermediate",
+    "durationMinutes": 75,
+    "featured": true,
+    "summary": "The snatch and the clean and jerk, taught position by position on the lifting platforms.",
+    "description": [
+      "The fastest lifts in the gym, broken into pieces you can learn. Most sessions use the hang and block positions before putting the whole lift together.",
+      "Bumper plates and dedicated platforms mean you can miss safely, which is how you learn these lifts."
+    ],
+    "whoItsFor": "Lifters with a solid front squat and overhead position. Newer lifters start with technique blocks.",
+    "whatToExpect": [
+      "Positional drills with a dowel or empty bar",
+      "Complex work at moderate weights",
+      "Pulls and squats to build strength for the lifts",
+      "Slow-motion video on request"
+    ],
+    "image": "classes/olympic-lifting",
+    "imageAlt": "A lifter standing on a wooden platform with a loaded barbell in the front rack",
+    "coaches": ["daniel-reyes"]
+  },
+  {
+    "slug": "kettlebell-conditioning",
+    "name": "Kettlebell conditioning",
+    "category": "conditioning",
+    "level": "all",
+    "durationMinutes": 45,
+    "featured": false,
+    "summary": "Swings, carries and complexes. Hard work that builds the engine without beating up your joints.",
+    "description": [
+      "Short, structured intervals built around the swing, the get-up and loaded carries. Every movement has a lighter and heavier option, so mixed groups work well.",
+      "It pairs well with the barbell classes on the days in between."
+    ],
+    "whoItsFor": "All levels. The coach will help you choose a bell.",
+    "whatToExpect": [
+      "Skill practice for one movement",
+      "Two timed interval blocks",
+      "Carries to finish"
+    ],
+    "image": "classes/kettlebell-conditioning",
+    "imageAlt": "A member at the top of a kettlebell swing on the rubber floor, with others training behind",
+    "coaches": ["priya-nair"]
+  },
+  {
+    "slug": "engine",
+    "name": "Engine",
+    "category": "conditioning",
+    "level": "all",
+    "durationMinutes": 45,
+    "featured": false,
+    "summary": "Rower, bike and sled intervals. Paced for your fitness, not the person next to you.",
+    "description": [
+      "Machine-based intervals with set targets for effort, so a first-timer and a regular can share the same session. Targets come from a short test in your first class.",
+      "No barbells and no complicated movements. Just work, rest and a clear finish line."
+    ],
+    "whoItsFor": "Everyone. Especially useful alongside the strength classes.",
+    "whatToExpect": [
+      "A short test session on your first visit",
+      "Intervals on the rower, bike and sled",
+      "Heart-rate or effort targets for each block"
+    ],
+    "image": "classes/engine",
+    "imageAlt": "A member driving a loaded sled down a strip of turf",
+    "coaches": ["priya-nair", "daniel-reyes"]
+  },
+  {
+    "slug": "mobility-and-recovery",
+    "name": "Mobility and recovery",
+    "category": "mobility",
+    "level": "all",
+    "durationMinutes": 45,
+    "featured": false,
+    "summary": "Slow, controlled work on hips, shoulders and spine. Better positions for every other class.",
+    "description": [
+      "Joint-by-joint mobility work that carries over to the lifts: deeper squats, a more comfortable overhead position and a back that tolerates deadlifts.",
+      "It is calm, but it is not a stretch class. You will work."
+    ],
+    "whoItsFor": "Everyone, and anyone training around a niggle.",
+    "whatToExpect": [
+      "Controlled joint rotations",
+      "End-range strength drills",
+      "A short routine to repeat at home"
+    ],
+    "image": "classes/mobility-and-recovery",
+    "imageAlt": "Members stretching on mats on a wooden floor beside tall windows",
+    "coaches": ["tom-becker"]
+  },
+  {
+    "slug": "build",
+    "name": "Build",
+    "category": "strength",
+    "level": "all",
+    "durationMinutes": 60,
+    "featured": false,
+    "summary": "Dumbbell and machine work for muscle. Moderate weights, lots of good reps.",
+    "description": [
+      "A hypertrophy session built on dumbbells, cables and machines. It is the class to take when you want to train hard without heavy barbells.",
+      "Each block is laid out on the whiteboard, with a coach on the floor to help you pick weights and keep your form honest."
+    ],
+    "whoItsFor": "All levels. Pairs well with Barbell strength.",
+    "whatToExpect": [
+      "Supersets for upper and lower body",
+      "Rep targets with a clear stopping point",
+      "Short rests and a steady pace"
+    ],
+    "image": "classes/build",
+    "imageAlt": "A member pressing two dumbbells overhead from an upright bench while a coach looks on",
+    "coaches": ["tom-becker", "maya-okafor"]
+  }
+]

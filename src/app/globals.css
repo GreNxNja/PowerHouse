@@ -1,0 +1,322 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+/* Short phones in portrait: the hero band leaves less room for its text. */
+@custom-variant short-portrait (@media (orientation: portrait) and (
+    max-height: 700px
+  ));
+
+/* Brand tokens. Concrete, chalk, plate iron. Ultra is the single accent: CTAs only. */
+@theme {
+  --color-concrete: #c9cccb;
+  --color-chalk: #f3f5f4;
+  --color-iron: #1d2225;
+  --color-rubber: #2c3236;
+  --color-ultra: #3b2bff;
+  --color-slate: #4f575b; /* secondary text: 6.7:1 on chalk, 4.6:1 on concrete */
+
+  --ease-fluid: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --container-prose: 68ch; /* body line length stays under 80 characters */
+}
+
+/* Fonts come from next/font CSS variables set on <html>, so these must be inline. */
+@theme inline {
+  --font-display: var(--font-archivo), system-ui, sans-serif;
+  --font-body: var(--font-plex), system-ui, sans-serif;
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-display);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* shadcn semantic variables, mapped onto the brand palette. Single light theme. */
+:root {
+  --background: var(--color-chalk);
+  --foreground: var(--color-iron);
+  --card: #ffffff;
+  --card-foreground: var(--color-iron);
+  --popover: var(--color-chalk);
+  --popover-foreground: var(--color-iron);
+  --primary: var(--color-ultra);
+  --primary-foreground: var(--color-chalk);
+  --secondary: var(--color-concrete);
+  --secondary-foreground: var(--color-iron);
+  --muted: #e4e7e6;
+  --muted-foreground: var(--color-slate);
+  --accent: var(--color-concrete);
+  --accent-foreground: var(--color-iron);
+  --destructive: #b42318;
+  --border: var(--color-concrete);
+  --input: #767d80; /* 3.8:1 on chalk, meets non-text contrast for form fields */
+  --ring: var(--color-ultra);
+  --radius: 0.125rem; /* hard edges: plate, not pill */
+}
+
+/*
+ * Evening theme: the gym after dark with the lights on. Dusk-blue black,
+ * tungsten-white text, and the single accent becomes amber lamplight.
+ * Toggled by .dark on <html> (system default, header toggle overrides).
+ * All pairs checked: text 15.8:1, secondary 6.1–8.1:1 on every evening
+ * surface, iron on amber 9.1:1, amber ring/CTA vs page 10.5:1, inputs 4.3:1.
+ */
+.dark {
+  color-scheme: dark;
+  --color-slate: #b3ab9e; /* secondary text, warm grey */
+  --background: #111518;
+  --foreground: #f3ede4;
+  --card: #1a2025;
+  --card-foreground: var(--foreground);
+  --popover: #1a2025;
+  --popover-foreground: var(--foreground);
+  --primary: #ffb547; /* lamplight; CTAs only, as ultra is by day */
+  --primary-foreground: var(--color-iron);
+  --secondary: #232a2f;
+  --secondary-foreground: var(--foreground);
+  --muted: #232a2f;
+  --muted-foreground: var(--color-slate);
+  --accent: #232a2f;
+  --accent-foreground: var(--foreground);
+  --border: #2e363b;
+  --input: #737b80;
+  --ring: #ffb547;
+}
+
+/*
+ * Surfaces. Textures from `npm run textures`, tinted so text contrast holds
+ * against the texture's extremes, not just its average:
+ *   rubber at 80% iron: chalk 13:1, concrete (muted) 8.8:1 over the brightest speckles
+ *   concrete at 75% concrete: iron 8.8:1, secondary text 5.7:1 over the darkest patches
+ */
+@layer components {
+  /* Dark sections. Ultra is only 2.3:1 on iron, so focus rings go chalk. */
+  .surface-iron {
+    --background: var(--color-iron);
+    --foreground: var(--color-chalk);
+    --muted-foreground: var(--color-concrete);
+    --border: var(--color-rubber);
+    --ring: var(--color-chalk);
+    --destructive: #ff9e8f; /* 8:1 on iron; #b42318 is only 2.4:1 */
+    background-color: var(--background);
+    background-image:
+      linear-gradient(rgb(29 34 37 / 0.8), rgb(29 34 37 / 0.8)),
+      url("/img/textures/rubber-600.webp");
+    background-size: auto, 300px;
+    color: var(--foreground);
+  }
+
+  /* Evening: amber focus rings on dark blocks too (9:1 on iron). */
+  .dark .surface-iron {
+    --ring: #ffb547;
+  }
+
+  /* Concrete sections. Slate is only 4.56:1 on flat concrete, so it darkens here. */
+  .texture-concrete {
+    --color-slate: #3a4145;
+    background-color: var(--color-concrete);
+    background-image:
+      linear-gradient(rgb(201 204 203 / 0.75), rgb(201 204 203 / 0.75)),
+      url("/img/textures/concrete-900.webp");
+    background-size: auto, 720px;
+  }
+
+  /* Evening concrete: the same wall at night. Secondary text 6.1:1. */
+  .dark .texture-concrete {
+    --color-slate: #b3ab9e;
+    background-color: #272d31;
+    background-image:
+      linear-gradient(rgb(31 37 41 / 0.93), rgb(31 37 41 / 0.93)),
+      url("/img/textures/concrete-900.webp");
+  }
+
+  /* Evening CTAs glow like a lit window. Static: no animation. */
+  .dark [data-cta] {
+    box-shadow:
+      0 0 0 1px rgb(255 181 71 / 0.35),
+      0 10px 36px -8px rgb(255 181 71 / 0.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  /* Evening: lamp-warm light from the top left, dusk blue from the top right. */
+  .dark body {
+    background-image:
+      radial-gradient(
+        70rem 36rem at 10% -8rem,
+        rgb(255 181 71 / 0.09),
+        transparent 70%
+      ),
+      radial-gradient(
+        60rem 30rem at 100% -6rem,
+        rgb(90 120 255 / 0.07),
+        transparent 70%
+      );
+    background-repeat: no-repeat;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    font-stretch: 125%;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+/* ---------- Page transitions (React <ViewTransition>) ---------- */
+
+/* Clicks during a transition reach the live page. */
+::view-transition {
+  pointer-events: none;
+}
+
+/* Header is the spatial anchor: it never animates. */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+/* Lateral: between top-level sections from the main nav. A quiet crossfade. */
+::view-transition-old(.nav-lateral) {
+  animation: 140ms var(--ease-fluid) both vt-fade reverse;
+}
+::view-transition-new(.nav-lateral) {
+  animation: 220ms var(--ease-fluid) 100ms both vt-fade;
+}
+
+/* Forward / back: into and out of detail pages. */
+::view-transition-old(.nav-forward) {
+  --vt-offset: -48px;
+  animation:
+    140ms ease-in both vt-fade reverse,
+    380ms var(--ease-fluid) both vt-slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --vt-offset: 48px;
+  animation:
+    220ms var(--ease-fluid) 120ms both vt-fade,
+    380ms var(--ease-fluid) both vt-slide;
+}
+::view-transition-old(.nav-back) {
+  --vt-offset: 48px;
+  animation:
+    140ms ease-in both vt-fade reverse,
+    380ms var(--ease-fluid) both vt-slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --vt-offset: -48px;
+  animation:
+    220ms var(--ease-fluid) 120ms both vt-fade,
+    380ms var(--ease-fluid) both vt-slide;
+}
+
+/* Shared element: class card image <-> detail hero image. */
+::view-transition-group(.morph) {
+  animation-duration: 420ms;
+  animation-timing-function: var(--ease-fluid);
+}
+::view-transition-image-pair(.morph) {
+  animation-name: vt-morph-blur;
+}
+@keyframes vt-morph-blur {
+  35% {
+    filter: blur(2px);
+  }
+}
+
+@keyframes vt-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes vt-slide {
+  from {
+    translate: var(--vt-offset) 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+/* Theme switch: a quick crossfade of the whole page, header included. */
+html.theme-switching::view-transition-old(root),
+html.theme-switching::view-transition-new(root) {
+  animation-duration: 450ms;
+  animation-timing-function: var(--ease-fluid);
+}
+html.theme-switching::view-transition-old(site-header) {
+  display: block;
+  animation: 450ms var(--ease-fluid) both vt-fade reverse;
+}
+html.theme-switching::view-transition-new(site-header) {
+  animation: 450ms var(--ease-fluid) both vt-fade;
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

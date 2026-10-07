@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "maya-okafor",
+    "name": "Maya Okafor",
+    "role": "Head coach",
+    "bio": [
+      "Maya has coached barbell strength for eleven years and competed in powerlifting for most of them, and wrote the programming every PowerHouse class runs on.",
+      "The coaching is quiet and specific. Expect one cue at a time, and a lot of attention on the warm-up sets nobody else watches."
+    ],
+    "specialties": ["Powerlifting", "Program design", "Returning lifters"],
+    "certifications": ["CSCS", "USA Powerlifting Club Coach"],
+    "image": "trainers/maya-okafor",
+    "imageAlt": "Maya Okafor standing with arms crossed in the mobility corner"
+  },
+  {
+    "slug": "daniel-reyes",
+    "name": "Daniel Reyes",
+    "role": "Olympic lifting coach",
+    "bio": [
+      "Daniel came to coaching from competitive weightlifting and still trains the snatch most mornings before the 6:00 class.",
+      "Daniel breaks the lifts into positions you can feel, so the fast parts stop being a guess."
+    ],
+    "specialties": [
+      "Snatch and clean and jerk",
+      "Speed and power",
+      "Mobility for overhead work"
+    ],
+    "certifications": ["USA Weightlifting Level 2"],
+    "image": "trainers/daniel-reyes",
+    "imageAlt": "Daniel Reyes resting both forearms on a barbell beside the gym windows"
+  },
+  {
+    "slug": "priya-nair",
+    "name": "Priya Nair",
+    "role": "Strength and conditioning coach",
+    "bio": [
+      "Priya runs Strength foundations and most of the free intro sessions. If you have never touched a barbell, Priya is probably the first coach you will meet.",
+      "Priya is good at finding the version of a lift that works for your body today, and the path to the full version."
+    ],
+    "specialties": ["Beginners", "Kettlebells", "Conditioning"],
+    "certifications": ["NSCA-CPT", "StrongFirst SFG I"],
+    "image": "trainers/priya-nair",
+    "imageAlt": "Priya Nair leaning on a barbell in the squat rack, smiling"
+  },
+  {
+    "slug": "tom-becker",
+    "name": "Tom Becker",
+    "role": "Mobility and recovery coach",
+    "bio": [
+      "Tom spent six years working alongside physical therapists before moving to the gym floor, and now runs Mobility and recovery and helps members train around old injuries.",
+      "Tom will not diagnose you, but will help you keep training while you get things looked at."
+    ],
+    "specialties": ["Mobility", "Training around injury", "Older lifters"],
+    "certifications": ["FRC Mobility Specialist", "Precision Nutrition L1"],
+    "image": "trainers/tom-becker",
+    "imageAlt": "Tom Becker leaning on a squat rack by the gym windows, one hand chalked"
+  }
+]

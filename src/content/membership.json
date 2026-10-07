@@ -1,0 +1,138 @@
+{
+  "plans": [
+    {
+      "id": "open-gym",
+      "name": "Open gym",
+      "summary": "Train on your own, any time we are open.",
+      "monthly": 2500,
+      "annualMonthly": 2000,
+      "highlighted": false,
+      "features": [
+        "Full gym access during opening hours",
+        "A free intro session with a coach",
+        "Lockers and showers"
+      ]
+    },
+    {
+      "id": "coached",
+      "name": "Coached",
+      "summary": "Two coached classes a week, plus open gym.",
+      "monthly": 6000,
+      "annualMonthly": 5000,
+      "highlighted": true,
+      "features": [
+        "8 classes a month, any type",
+        "Full open gym access",
+        "Training log and program reviews",
+        "One guest pass a month"
+      ]
+    },
+    {
+      "id": "unlimited",
+      "name": "Unlimited",
+      "summary": "Every class on the timetable, as often as you like.",
+      "monthly": 8500,
+      "annualMonthly": 7000,
+      "highlighted": false,
+      "features": [
+        "Unlimited classes, including Powerlifting club",
+        "Full open gym access",
+        "A quarterly one-to-one review with a coach",
+        "Two guest passes a month"
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "feature": "Open gym access",
+      "values": {
+        "open-gym": true,
+        "coached": true,
+        "unlimited": true
+      }
+    },
+    {
+      "feature": "Free intro session",
+      "values": {
+        "open-gym": true,
+        "coached": true,
+        "unlimited": true
+      }
+    },
+    {
+      "feature": "Coached classes",
+      "values": {
+        "open-gym": false,
+        "coached": "8 a month",
+        "unlimited": "Unlimited"
+      }
+    },
+    {
+      "feature": "Powerlifting club",
+      "values": {
+        "open-gym": false,
+        "coached": false,
+        "unlimited": true
+      }
+    },
+    {
+      "feature": "Program reviews",
+      "values": {
+        "open-gym": false,
+        "coached": "Monthly",
+        "unlimited": "Monthly"
+      }
+    },
+    {
+      "feature": "One-to-one review",
+      "values": {
+        "open-gym": false,
+        "coached": false,
+        "unlimited": "Quarterly"
+      }
+    },
+    {
+      "feature": "Guest passes",
+      "values": {
+        "open-gym": false,
+        "coached": "1 a month",
+        "unlimited": "2 a month"
+      }
+    },
+    {
+      "feature": "Freeze your membership",
+      "values": {
+        "open-gym": true,
+        "coached": true,
+        "unlimited": true
+      }
+    }
+  ],
+  "notes": [
+    "Monthly plans roll month to month with 30 days’ notice to cancel.",
+    "Annual plans are paid up front and work out cheaper per month.",
+    "Drop-in classes are ₹500. Your first session is always free."
+  ],
+  "faqs": [
+    {
+      "question": "What happens in the free session?",
+      "answer": "You meet a coach for about an hour. They show you around, ask what you want from training, watch you move through a few basic lifts and suggest where to start. There is no pressure to sign up on the day."
+    },
+    {
+      "question": "I have never lifted before. Is that a problem?",
+      "answer": "Not at all. Most members start in Strength foundations, a four-week beginner block with groups of six or fewer. You learn every lift from scratch."
+    },
+    {
+      "question": "Can I freeze my membership?",
+      "answer": "Yes. Every plan can be frozen for up to two months a year, for travel, injury or anything else. Tell the front desk a week ahead."
+    },
+    {
+      "question": "Can I change plans later?",
+      "answer": "You can move between monthly plans at the start of any billing month. Annual plans can be upgraded at any time, and we credit what is left."
+    },
+    {
+      "question": "What should I bring?",
+      "answer": "Comfortable clothes, flat shoes if you have them, and a water bottle. We provide chalk, belts and everything else."
+    }
+  ]
+}

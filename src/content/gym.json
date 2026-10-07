@@ -1,0 +1,71 @@
+{
+  "placeholder": true,
+  "name": "PowerHouse",
+  "tagline": "Strength training, coached properly.",
+  "description": "PowerHouse is a strength gym with coached barbell classes, open training and a free first session with a coach.",
+  "locale": "en-IN",
+  "currency": "INR",
+  "phone": {
+    "display": "(555) 010-4242",
+    "e164": "+15550104242"
+  },
+  "whatsapp": "15550104242",
+  "email": "hello@powerhouse.example",
+  "address": {
+    "street": "Unit 4, Foundry Yard",
+    "locality": "Riverside",
+    "region": "",
+    "postalCode": "00000",
+    "country": "US"
+  },
+  "geo": null,
+  "hours": [
+    {
+      "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+      "opens": "05:30",
+      "closes": "22:00"
+    },
+    {
+      "days": ["saturday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    {
+      "days": ["sunday"],
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "exterior": {
+    "image": "gym/exterior",
+    "alt": "The gym at dusk from the street: a concrete warehouse with tall lit windows and people lifting inside",
+    "caption": "Look for the lit windows."
+  },
+  "gallery": [
+    {
+      "image": "gym/floor",
+      "alt": "A row of power racks on wooden lifting platforms beside floor-to-ceiling windows, dumbbell racks along the far wall",
+      "caption": "The lifting floor"
+    },
+    {
+      "image": "gym/front-desk",
+      "alt": "A concrete front desk with a steel top and a stack of towels, the racks behind it",
+      "caption": "Front desk"
+    },
+    {
+      "image": "gym/lockers",
+      "alt": "Rows of black lockers with benches in a concrete changing room lit by tall windows",
+      "caption": "Lockers and changing"
+    },
+    {
+      "image": "gym/plates",
+      "alt": "Cast iron plates stacked on a plate tree beside a power rack",
+      "caption": "Iron, racked and ready"
+    },
+    {
+      "image": "gym/chalk",
+      "alt": "A steel bowl of chalk on a stainless shelf next to a worn training log",
+      "caption": "Chalk and a training log"
+    }
+  ]
+}

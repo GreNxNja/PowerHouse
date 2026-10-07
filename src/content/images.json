@@ -1,0 +1,201 @@
+{
+  "classes/barbell-strength": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/build": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/engine": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/kettlebell-conditioning": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/mobility-and-recovery": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/olympic-lifting": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/powerlifting-club": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "classes/strength-foundations": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "gym/chalk": {
+    "width": 2000,
+    "height": 1493,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "gym/exterior": {
+    "width": 2000,
+    "height": 1116,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "gym/floor": {
+    "width": 2000,
+    "height": 1493,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "gym/front-desk": {
+    "width": 2000,
+    "height": 1493,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "gym/intro-session": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "gym/lockers": {
+    "width": 2000,
+    "height": 1493,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "gym/plates": {
+    "width": 2000,
+    "height": 1493,
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ]
+  },
+  "hero/poster": {
+    "width": 1110,
+    "height": 720,
+    "widths": [
+      640,
+      960,
+      1110
+    ]
+  },
+  "trainers/daniel-reyes": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "trainers/maya-okafor": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "trainers/priya-nair": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  },
+  "trainers/tom-becker": {
+    "width": 1493,
+    "height": 2000,
+    "widths": [
+      640,
+      960,
+      1440,
+      1493
+    ]
+  }
+}
